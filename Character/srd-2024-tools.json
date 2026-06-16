@@ -1,0 +1,158 @@
+[
+ {
+  "id": "srd-2024_tool_alchemist-s-supplies",
+  "name": "Alchemist's Supplies",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_brewer-s-supplies",
+  "name": "Brewer's Supplies",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_calligrapher-s-supplies",
+  "name": "Calligrapher's Supplies",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_carpenter-s-tools",
+  "name": "Carpenter's Tools",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_cartographer-s-tools",
+  "name": "Cartographer's Tools",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_climber-s-kit",
+  "name": "Climber's Kit",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_cobbler-s-tools",
+  "name": "Cobbler's Tools",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_cook-s-utensils",
+  "name": "Cook's Utensils",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_disguise-kit",
+  "name": "Disguise Kit",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_forgery-kit",
+  "name": "Forgery Kit",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_glassblower-s-tools",
+  "name": "Glassblower's Tools",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_healer-s-kit",
+  "name": "Healer's Kit",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_herbalism-kit",
+  "name": "Herbalism Kit",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_jeweler-s-tools",
+  "name": "Jeweler's Tools",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_leatherworker-s-tools",
+  "name": "Leatherworker's Tools",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_mason-s-tools",
+  "name": "Mason's Tools",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "custom_tool_monster-harvest-tool",
+  "name": "Monster Harvest Tool",
+  "category": "tool",
+  "isCustom": true
+ },
+ {
+  "id": "srd-2024_tool_navigator-s-tools",
+  "name": "Navigator's Tools",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_painter-s-supplies",
+  "name": "Painter's Supplies",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_poisoner-s-kit",
+  "name": "Poisoner's Kit",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_potter-s-tools",
+  "name": "Potter's Tools",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_smith-s-tools",
+  "name": "Smith's Tools",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_thieves-tools",
+  "name": "Thieves' Tools",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_tinker-s-tools",
+  "name": "Tinker's Tools",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_weaver-s-tools",
+  "name": "Weaver's Tools",
+  "category": "tool",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tool_woodcarver-s-tools",
+  "name": "Woodcarver's Tools",
+  "category": "tool",
+  "isCustom": false
+ }
+]
