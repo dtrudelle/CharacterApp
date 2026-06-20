@@ -199,7 +199,7 @@ struct CharacterEditorView: View {
         Section("Identité") {
             TextField("Nom", text: $character.name)
             TextField("Joueur", text: $character.playerName)
-            Picker("Espèce", selection: $character.speciesId) {
+            Picker("Race", selection: $character.speciesId) {
                 ForEach(library.species) { Text($0.name).tag($0.id) }
             }
             Picker("Background", selection: $character.backgroundId) {
@@ -218,11 +218,11 @@ struct CharacterEditorView: View {
 
     private var abilitiesSection: some View {
         Section("Caractéristiques (base)") {
-            abilityStepper("Force", $character.baseAbilities.STR)
+            abilityStepper("Strength", $character.baseAbilities.STR)
             abilityStepper("Dextérité", $character.baseAbilities.DEX)
             abilityStepper("Constitution", $character.baseAbilities.CON)
             abilityStepper("Intelligence", $character.baseAbilities.INT)
-            abilityStepper("Sagesse", $character.baseAbilities.WIS)
+            abilityStepper("Wisdow", $character.baseAbilities.WIS)
             abilityStepper("Charisme", $character.baseAbilities.CHA)
             Text("Scores finaux (avec bonus) calculés sur la fiche.")
                 .font(.caption2).foregroundStyle(.tertiary)
@@ -243,11 +243,11 @@ struct CharacterEditorView: View {
     }
 
     private var skillsSection: some View {
-        Section("Compétences") {
+        Section("Skill") {
             Text("Background: \(currentBackground.skillProficiencies.map(\.label).joined(separator: ", "))")
                 .font(.caption).foregroundStyle(.secondary)
             ForEach(0..<currentClass.skillChoiceCount, id: \.self) { i in
-                Picker("Compétence \(i + 1)", selection: skillSlotBinding(i)) {
+                Picker("Skill \(i + 1)", selection: skillSlotBinding(i)) {
                     Text("—").tag(Optional<Skill>.none)
                     ForEach(eligibleSkills(for: i), id: \.self) { sk in
                         Text(sk.label).tag(Optional(sk))
@@ -256,8 +256,8 @@ struct CharacterEditorView: View {
             }
             ForEach($bonusSkills) { $entry in
                 HStack {
-                    Picker("Compétence bonus", selection: $entry.skill) {
-                        ForEach(Skill.allCases, id: \.self) { sk in Text(sk.label).tag(sk) }
+                    Picker("Skill bonus", selection: $entry.skill) {
+                        ForEach(Skill.allCasesSorted, id: \.self) { sk in Text(sk.label).tag(sk) }
                     }
                     Button(role: .destructive) {
                         bonusSkills.removeAll { $0.id == entry.id }
@@ -271,7 +271,7 @@ struct CharacterEditorView: View {
                 let pick = Skill.allCases.first { !proficientSkills.contains($0) } ?? Skill.allCases[0]
                 bonusSkills.append(BonusSkillEntry(skill: pick))
             } label: {
-                Label("Ajouter une compétence (don / règle maison)", systemImage: "plus.circle")
+                Label("Ajouter un skill (feat / règle maison)", systemImage: "plus.circle")
             }
             .buttonStyle(.plain)
             if !proficientSkills.isEmpty {
@@ -325,14 +325,14 @@ struct CharacterEditorView: View {
             // Texte libre seulement si l'outil d'historique ne correspond à aucun
             // outil de la liste (sinon il est coché ci-dessous, pas besoin de doublon).
             if !currentBackground.toolProficiency.isEmpty, backgroundToolMatch == nil {
-                Text("Historique : \(currentBackground.toolProficiency)")
+                Text("Background : \(currentBackground.toolProficiency)")
                     .font(.caption).foregroundStyle(.secondary)
             }
             ForEach(chosenTools) { tool in
                 HStack {
                     Text(tool.name)
                     if tool.id == backgroundToolMatch?.id {
-                        Text("(historique)").font(.caption2).foregroundStyle(.secondary)
+                        Text("(Background)").font(.caption2).foregroundStyle(.secondary)
                     }
                     Spacer()
                     Button(role: .destructive) {
@@ -441,7 +441,7 @@ struct CharacterEditorView: View {
             Button {
                 bonusFeatIds.append(BonusFeatEntry(featId: ""))
             } label: {
-                Label("Ajouter un don (acquis hors progression normale)", systemImage: "plus.circle")
+                Label("Ajouter un feat (acquis hors progression normale)", systemImage: "plus.circle")
             }
             .buttonStyle(.plain)
         }
@@ -606,7 +606,9 @@ struct CharacterEditorView: View {
             .filter { $0.offset != slot }
             .compactMap { $0.element }
         let exclude = Set(currentBackground.skillProficiencies + takenElsewhere)
-        return currentClass.skillChoiceOptions.filter { !exclude.contains($0) }
+        return currentClass.skillChoiceOptions
+            .filter { !exclude.contains($0) }
+            .sorted { $0.label < $1.label }
     }
 
     private var assembledIncreases: [AbilityIncrease] {

@@ -105,7 +105,7 @@ struct SheetBuilder {
         // Compétences
         let proficient = Set(refs.background.skillProficiencies + ch.chosenClassSkills)
         let expert = Set(ch.expertise)
-        let skills: [ComputedSheet.SkillLine] = Skill.allCases.map { sk in
+        let skills: [ComputedSheet.SkillLine] = Skill.allCasesSorted.map { sk in
             let mod = abilities.modifier(sk.ability)
             let isExpert = expert.contains(sk)
             let isProf = proficient.contains(sk) || isExpert
@@ -396,8 +396,8 @@ extension SheetBuilder {
     static var exampleReferences: References {
         References(
             species: Species(id: "humain", name: "Humaine", traits: [
-                Trait(name: "Polyvalente", description: "Don d'origine au choix."),
-                Trait(name: "Compétente", description: "Maîtrise d'une compétence supplémentaire.")
+                Trait(name: "Polyvalente", description: "Feat d'origine au choix."),
+                Trait(name: "Skill", description: "Maîtrise d'un skill supplémentaire.")
             ]),
             background: Background(
                 id: "sage", name: "Sage",

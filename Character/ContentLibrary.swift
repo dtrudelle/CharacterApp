@@ -122,6 +122,7 @@ final class ContentLibrary {
     func isCustom(class id: CharacterClass.ID) -> Bool { classes.first { $0.id == id }?.isCustom ?? false }
     func isCustom(subclass id: Subclass.ID)  -> Bool { subclasses.first { $0.id == id }?.isCustom ?? false }
     func isCustom(feat id: Feat.ID)          -> Bool { feats.first { $0.id == id }?.isCustom ?? false }
+    func isCustom(spell id: Spell.ID)        -> Bool { spells.first { $0.id == id }?.isCustom ?? false }
 
     // MARK: - Upsert (insère ou met à jour une entrée maison)
 
@@ -130,6 +131,7 @@ final class ContentLibrary {
     func upsert(_ c: CharacterClass) { var v = c; v.isCustom = true; upsertInto(&classes, v); persist() }
     func upsert(_ s: Subclass)       { var v = s; v.isCustom = true; upsertInto(&subclasses, v); persist() }
     func upsert(_ f: Feat)           { var v = f; v.isCustom = true; upsertInto(&feats, v); persist() }
+    func upsert(_ s: Spell)          { var v = s; v.isCustom = true; upsertInto(&spells, v); persist() }
 
     // MARK: - Suppression (refuse de toucher au SRD)
 
@@ -142,6 +144,7 @@ final class ContentLibrary {
     func deleteClass(_ id: CharacterClass.ID)  { if deleteCustom(from: &classes, id: id)     { persist() } }
     func deleteSubclass(_ id: Subclass.ID)     { if deleteCustom(from: &subclasses, id: id)  { persist() } }
     func deleteFeat(_ id: Feat.ID)             { if deleteCustom(from: &feats, id: id)       { persist() } }
+    func deleteSpell(_ id: Spell.ID)           { if deleteCustom(from: &spells, id: id)      { persist() } }
 
     // MARK: - Duplication (SRD ou maison → nouvelle copie maison éditable)
 
@@ -175,6 +178,12 @@ final class ContentLibrary {
         c.name = f.name + " (copie)"
         return c
     }
+    func duplicate(_ s: Spell) -> Spell {
+        var c = s; c.isCustom = true
+        c.id = uniqueID(base: s.id + "-copie", existing: spells.map(\.id))
+        c.name = s.name + " (copie)"
+        return c
+    }
 
     // MARK: - Recherche (par nom, SRD + maison)
 
@@ -183,6 +192,7 @@ final class ContentLibrary {
     func searchClasses(_ q: String)     -> [CharacterClass] { filterByName(classes, q) }
     func searchSubclasses(_ q: String)  -> [Subclass]       { filterByName(subclasses, q) }
     func searchFeats(_ q: String)       -> [Feat]           { filterByName(feats, q) }
+    func searchSpells(_ q: String)      -> [Spell]          { filterByName(spells, q) }
 
     // MARK: - Import depuis un bloc JSON
 
@@ -232,13 +242,35 @@ final class ContentLibrary {
 
     // MARK: - Persistance des entrées maison
 
-    /// Conteneur sérialisé : seulement les entrées maison des cinq tableaux.
+    /// Conteneur sérialisé : seulement les entrées maison des tableaux.
     private struct CustomContent: Codable {
-        var species: [Species]
-        var backgrounds: [Background]
-        var classes: [CharacterClass]
-        var subclasses: [Subclass]
-        var feats: [Feat]
+        var species: [Species] = []
+        var backgrounds: [Background] = []
+        var classes: [CharacterClass] = []
+        var subclasses: [Subclass] = []
+        var feats: [Feat] = []
+        var spells: [Spell] = []
+
+        enum CodingKeys: String, CodingKey {
+            case species, backgrounds, classes, subclasses, feats, spells
+        }
+
+        init(species: [Species], backgrounds: [Background], classes: [CharacterClass],
+             subclasses: [Subclass], feats: [Feat], spells: [Spell]) {
+            self.species = species; self.backgrounds = backgrounds; self.classes = classes
+            self.subclasses = subclasses; self.feats = feats; self.spells = spells
+        }
+
+        // Décodage tolérant : chaque tableau peut manquer d'un fichier ancien.
+        init(from decoder: Decoder) throws {
+            let c = try decoder.container(keyedBy: CodingKeys.self)
+            species     = try c.decodeIfPresent([Species].self, forKey: .species) ?? []
+            backgrounds = try c.decodeIfPresent([Background].self, forKey: .backgrounds) ?? []
+            classes     = try c.decodeIfPresent([CharacterClass].self, forKey: .classes) ?? []
+            subclasses  = try c.decodeIfPresent([Subclass].self, forKey: .subclasses) ?? []
+            feats       = try c.decodeIfPresent([Feat].self, forKey: .feats) ?? []
+            spells      = try c.decodeIfPresent([Spell].self, forKey: .spells) ?? []
+        }
     }
 
     private func loadCustom() {
@@ -250,6 +282,7 @@ final class ContentLibrary {
         for c in decoded.classes     { var v = c; v.isCustom = true; upsertInto(&classes, v) }
         for s in decoded.subclasses  { var v = s; v.isCustom = true; upsertInto(&subclasses, v) }
         for f in decoded.feats       { var v = f; v.isCustom = true; upsertInto(&feats, v) }
+        for s in decoded.spells      { var v = s; v.isCustom = true; upsertInto(&spells, v) }
     }
 
     private func persist() {
@@ -260,7 +293,8 @@ final class ContentLibrary {
             backgrounds: backgrounds.filter(\.isCustom),
             classes: classes.filter(\.isCustom),
             subclasses: subclasses.filter(\.isCustom),
-            feats: feats.filter(\.isCustom)
+            feats: feats.filter(\.isCustom),
+            spells: spells.filter(\.isCustom)
         )
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
@@ -330,6 +364,7 @@ extension Background: HasCustomFlag, NamedEntity {}
 extension CharacterClass: HasCustomFlag, NamedEntity {}
 extension Subclass: HasCustomFlag, NamedEntity {}
 extension Feat: HasCustomFlag, NamedEntity {}
+extension Spell: HasCustomFlag, NamedEntity {}
 
 // MARK: - Amorçage (repli si les JSON SRD sont absents du bundle)
 
@@ -342,7 +377,7 @@ extension ContentLibrary {
         let species = [
             Species(id: "humain", name: "Humaine", traits: [
                 Trait(name: "Polyvalente", description: "Origin feat (free choice)."),
-                Trait(name: "Compétente", description: "Maîtrise d'une compétence supplémentaire."),
+                Trait(name: "Skill", description: "Maîtrise d'un skill supplémentaire."),
                 Trait(name: "Ingénieuse", description: "Inspiration héroïque à chaque repos long.")
             ]),
             Species(id: "nain-des-collines", name: "Nain des collines", traits: [

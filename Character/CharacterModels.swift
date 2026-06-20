@@ -92,6 +92,11 @@ enum Skill: String, Codable, CaseIterable {
 
     /// Libellé affiché (rawValue anglais).
     var label: String { rawValue }
+
+    /// Toutes les compétences triées par libellé anglais (pour l'affichage).
+    static var allCasesSorted: [Skill] {
+        allCases.sorted { $0.label < $1.label }
+    }
 }
 
 // MARK: - Feats
@@ -110,9 +115,28 @@ struct Feat: Codable, Identifiable {
     var category: FeatCategory
     var shortEffect: String
     /// Prérequis éventuel (ex. « niveau 4+ », « Force 13 »). Vide = aucun.
-    /// Optionnel pour rester rétro-compatible avec les JSON sans ce champ.
     var prerequisite: String = ""
     var isCustom: Bool = false
+
+    init(id: String, name: String, category: FeatCategory, shortEffect: String,
+         prerequisite: String = "", isCustom: Bool = false) {
+        self.id = id; self.name = name; self.category = category
+        self.shortEffect = shortEffect; self.prerequisite = prerequisite; self.isCustom = isCustom
+    }
+
+    // Décodage tolérant : `prerequisite` et `isCustom` peuvent manquer du JSON
+    // (le Codable synthétisé, lui, exigerait la clé même avec une valeur par défaut).
+    enum CodingKeys: String, CodingKey { case id, name, category, shortEffect, prerequisite, isCustom }
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        id = try c.decode(String.self, forKey: .id)
+        name = try c.decode(String.self, forKey: .name)
+        category = try c.decode(FeatCategory.self, forKey: .category)
+        shortEffect = try c.decode(String.self, forKey: .shortEffect)
+        prerequisite = try c.decodeIfPresent(String.self, forKey: .prerequisite) ?? ""
+        isCustom = try c.decodeIfPresent(Bool.self, forKey: .isCustom) ?? false
+    }
 }
 
 // MARK: - Espèce

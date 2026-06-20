@@ -87,11 +87,12 @@ struct RootView: View {
 
             // Bibliothèque → sous-menu des cinq types + import.
             Menu {
-                Button { libraryRoute = .species }     label: { Label("Espèces", systemImage: "person.3") }
-                Button { libraryRoute = .backgrounds } label: { Label("Historiques", systemImage: "scroll") }
+                Button { libraryRoute = .species }     label: { Label("Race", systemImage: "person.3") }
+                Button { libraryRoute = .backgrounds } label: { Label("Background", systemImage: "scroll") }
                 Button { libraryRoute = .classes }     label: { Label("Classes", systemImage: "shield") }
                 Button { libraryRoute = .subclasses }  label: { Label("Sous-classes", systemImage: "shield.lefthalf.filled") }
                 Button { libraryRoute = .feats }       label: { Label("Feats", systemImage: "star") }
+                Button { libraryRoute = .spells }      label: { Label("Sorts", systemImage: "sparkles") }
                 Divider()
                 Button { libraryRoute = .importer }    label: { Label("Importer…", systemImage: "square.and.arrow.down") }
             } label: {
@@ -130,7 +131,7 @@ struct RootView: View {
 // MARK: - Routage des fenêtres de bibliothèque
 
 enum LibraryRoute: String, Identifiable {
-    case species, backgrounds, classes, subclasses, feats, importer
+    case species, backgrounds, classes, subclasses, feats, spells, importer
     var id: String { rawValue }
 }
 
@@ -145,6 +146,7 @@ struct LibraryRouter: View {
         case .classes:     ClassLibrarySheet()
         case .subclasses:  SubclassLibrarySheet()
         case .feats:       FeatLibrarySheet()
+        case .spells:      SpellLibrarySheet()
         case .importer:    ImportContentSheet()
         }
     }

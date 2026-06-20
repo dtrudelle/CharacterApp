@@ -297,9 +297,9 @@ struct BackgroundEditorSheet: View {
                 Section("Identité") {
                     TextField("Nom", text: $draft.name)
                 }
-                Section("Caractéristiques & compétences") {
+                Section("Caractéristiques & Skill") {
                     AbilityMultiMenu(title: "Caracs recommandées", values: $abilityOptions)
-                    SkillMultiMenu(title: "Maîtrises de compétence", values: $skills)
+                    SkillMultiMenu(title: "Maîtrises de skill", values: $skills)
                 }
                 Section("Origin Feat") {
                     // Référence un don existant : menu déroulant (évite les fautes de frappe).
@@ -406,7 +406,7 @@ struct ClassEditorSheet: View {
                     }
                     AbilityPicker(title: "Carac d'incantation", value: $spellAbility, allowsNone: true)
                 }
-                Section("Compétences") {
+                Section("Skill") {
                     Stepper("Nombre à choisir : \(draft.skillChoiceCount)",
                             value: $draft.skillChoiceCount, in: 0...6)
                     SkillMultiMenu(title: "Choix possibles", values: $skillOptions)
@@ -585,6 +585,97 @@ struct FeatEditorSheet: View {
         library.upsert(draft)
         dismiss()
     }
+}
+
+// MARK: - Sorts maison
+
+struct SpellLibrarySheet: View {
+    @Environment(ContentLibrary.self) private var library
+    @Environment(\.dismiss) private var dismiss
+
+    @State private var query = ""
+    @State private var editing: Spell?
+
+    var body: some View {
+        LibraryScaffold(
+            title: "Sorts",
+            subtitle: "Créez un sort maison (nom, niveau, classes). Les sorts SRD restent intacts.",
+            query: $query,
+            onNew: {
+                editing = Spell(id: "", name: "Nouveau sort", level: 0, classIds: [], isCustom: true)
+            },
+            onClose: { dismiss() }
+        ) {
+            ForEach(library.searchSpells(query)) { s in
+                EntryRow(
+                    name: s.name,
+                    detail: spellLevelLabel(s.level),
+                    isCustom: s.isCustom,
+                    onDuplicate: { let c = library.duplicate(s); library.upsert(c); editing = c },
+                    onEdit: { editing = s },
+                    onDelete: { library.deleteSpell(s.id) }
+                )
+            }
+        }
+        .sheet(item: $editing) { s in SpellEditorSheet(spell: s) }
+    }
+}
+
+struct SpellEditorSheet: View {
+    @Environment(ContentLibrary.self) private var library
+    @Environment(\.dismiss) private var dismiss
+
+    @State private var draft: Spell
+
+    init(spell: Spell) { _draft = State(initialValue: spell) }
+
+    var body: some View {
+        EditorScaffold(title: draft.name, onCancel: { dismiss() }, onSave: save) {
+            Form {
+                Section("Identité") {
+                    TextField("Nom", text: $draft.name)
+                    Picker("Niveau", selection: $draft.level) {
+                        ForEach(0...9, id: \.self) { lvl in
+                            Text(spellLevelLabel(lvl)).tag(lvl)
+                        }
+                    }
+                }
+                Section("Classes qui peuvent l'apprendre") {
+                    ForEach(library.classes) { cls in
+                        Toggle(cls.name, isOn: classBinding(cls.id))
+                    }
+                    if library.classes.isEmpty {
+                        Text("Aucune classe chargée.").font(.caption).foregroundStyle(.secondary)
+                    }
+                }
+            }
+            .formStyle(.grouped)
+        }
+    }
+
+    /// Binding pour cocher/décocher une classe dans `classIds`.
+    private func classBinding(_ id: String) -> Binding<Bool> {
+        Binding(
+            get: { draft.classIds.contains(id) },
+            set: { on in
+                if on {
+                    if !draft.classIds.contains(id) { draft.classIds.append(id) }
+                } else {
+                    draft.classIds.removeAll { $0 == id }
+                }
+            })
+    }
+
+    private func save() {
+        if draft.id.isEmpty { draft.id = makeID(from: draft.name, prefix: "sort") }
+        library.upsert(draft)
+        dismiss()
+    }
+}
+
+/// Libellé d'un niveau de sort (« Cantrip » pour 0, sinon « Niveau N »).
+private func spellLevelLabel(_ level: Int) -> String {
+    level == 0 ? "Cantrip" : "Niveau \(level)"
 }
 
 private func featCategoryLabel(_ c: FeatCategory) -> String {

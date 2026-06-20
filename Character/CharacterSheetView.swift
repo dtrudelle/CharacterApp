@@ -145,7 +145,7 @@ struct CharacterSheetView: View {
         let left = Array(sheet.skills.prefix(half))
         let right = Array(sheet.skills.dropFirst(half))
         return VStack(alignment: .leading, spacing: 6) {
-            sectionLabel("Compétences")
+            sectionLabel("Skill")
             HStack(alignment: .top, spacing: 18) {
                 skillList(left)
                 skillList(right)
@@ -453,11 +453,11 @@ struct CharacterSheetView: View {
 
     private func saveName(_ a: Ability) -> String {
         switch a {
-        case .STR: return "Force"
+        case .STR: return "Strength"
         case .DEX: return "Dextérité"
         case .CON: return "Constitution"
         case .INT: return "Intelligence"
-        case .WIS: return "Sagesse"
+        case .WIS: return "Wisdom"
         case .CHA: return "Charisme"
         }
     }
