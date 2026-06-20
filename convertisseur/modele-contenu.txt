@@ -1,0 +1,73 @@
+# =====================================================================
+#  Modèle de contenu — format texte léger
+#
+#  Remplissez ce fichier en transcrivant DEPUIS VOTRE PROPRE LIVRE.
+#  Les descriptions doivent être des RÉSUMÉS dans vos mots (pas le texte
+#  intégral). Lignes vides et lignes « # … » ignorées.
+#
+#  Conversion :
+#     python3 convertir_contenu.py modele-contenu.txt --lib /chemin/projet
+#  puis collez les fichiers import-<type>.json produits dans la fenêtre
+#  « Importer » de l'app (en choisissant le bon type dans le menu).
+#
+#  Syntaxe d'une capacité :  Nom (niveau) | résumé
+#     - le « (niveau) » est requis pour classes/sous-classes, absent pour espèces
+#     - tout après « | » est la description (résumé)
+# =====================================================================
+
+
+# ---- ESPÈCE -------------------------------------------------------
+# Champs : trait (répétable). Pas de niveau sur les traits d'espèce.
+
+ESPÈCE: Demi-elfe
+  trait: Vision dans le noir | Voit dans la pénombre jusqu'à 18 m.
+  trait: Ascendance féerique | Avantage contre l'état charmé.
+
+
+# ---- HISTORIQUE ---------------------------------------------------
+# Champs : caracs (liste), competences (liste), don (nom ou id),
+#          outil, equipement.
+
+HISTORIQUE: Artisan de guilde
+  caracs: FOR, DEX, INT
+  competences: Persuasion, Intuition
+  don: Initié à la magie
+  outil: Outils d'artisan au choix
+  equipement: Outils d'artisan, lettre de recommandation, 15 PO
+
+
+# ---- CLASSE -------------------------------------------------------
+# Champs : de, saves (liste), lanceur (none/full/half/third/pact),
+#          carac_sorts (ou « aucune »), competences_nb,
+#          competences_choix (liste), asi (liste de niveaux),
+#          capacite (répétable, avec niveau).
+
+CLASSE: Artificier
+  de: d8
+  saves: CON, INT
+  lanceur: half
+  carac_sorts: INT
+  competences_nb: 2
+  competences_choix: Arcanes, Histoire, Investigation, Médecine, Nature, Perception
+  asi: 4, 8, 12, 16, 19
+  capacite: Bricolage magique (1) | Imprègne de petits objets d'effets mineurs.
+  capacite: Infusion d'objet (2) | Confère des propriétés magiques temporaires.
+
+
+# ---- SOUS-CLASSE --------------------------------------------------
+# Le nom porte la classe parente entre parenthèses : Nom (Classe).
+# Champs : capacite (répétable, avec niveau).
+
+SOUSCLASSE: Alchimiste (Artificier)
+  capacite: Élixir expérimental (3) | Prépare des élixirs aux effets aléatoires.
+  capacite: Savant alchimiste (5) | Majore certains dégâts et soins.
+
+
+# ---- DON ----------------------------------------------------------
+# Champs : categorie (general/origine/styleDeCombat/faveurEpique),
+#          prerequis (— si aucun), effet.
+
+DON: Chanceux
+  categorie: general
+  prerequis: —
+  effet: Dispose de points de chance pour relancer certains dés.

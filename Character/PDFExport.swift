@@ -17,7 +17,7 @@ enum PDFExport {
 
     static func makePDF(character: Character,
                         references: SheetBuilder.References,
-                        scale: CGFloat = 2) -> Data? {
+                        scale: CGFloat = 3) -> Data? {
         let view = CharacterSheetView(character: character, references: references)
         let pageWidth = view.printablePageWidth
         let pageHeight = view.printablePageHeight

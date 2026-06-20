@@ -1,0 +1,3593 @@
+[
+ {
+  "id": "srd-2024_acid-splash",
+  "name": "Acid Splash",
+  "level": 0,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_chill-touch",
+  "name": "Chill Touch",
+  "level": 0,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_dancing-lights",
+  "name": "Dancing Lights",
+  "level": 0,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_druidcraft",
+  "name": "Druidcraft",
+  "level": 0,
+  "classIds": [
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_eldritch-blast",
+  "name": "Eldritch Blast",
+  "level": 0,
+  "classIds": [
+   "srd-2024_warlock"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_elementalism",
+  "name": "Elementalism",
+  "level": 0,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_fire-bolt",
+  "name": "Fire Bolt",
+  "level": 0,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_guidance",
+  "name": "Guidance",
+  "level": 0,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_light",
+  "name": "Light",
+  "level": 0,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_mage-hand",
+  "name": "Mage Hand",
+  "level": 0,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_mending",
+  "name": "Mending",
+  "level": 0,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_message",
+  "name": "Message",
+  "level": 0,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_minor-illusion",
+  "name": "Minor Illusion",
+  "level": 0,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_poison-spray",
+  "name": "Poison Spray",
+  "level": 0,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_prestidigitation",
+  "name": "Prestidigitation",
+  "level": 0,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_produce-flame",
+  "name": "Produce Flame",
+  "level": 0,
+  "classIds": [
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_ray-of-frost",
+  "name": "Ray of Frost",
+  "level": 0,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_resistance",
+  "name": "Resistance",
+  "level": 0,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_sacred-flame",
+  "name": "Sacred Flame",
+  "level": 0,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_shillelagh",
+  "name": "Shillelagh",
+  "level": 0,
+  "classIds": [
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_shocking-grasp",
+  "name": "Shocking Grasp",
+  "level": 0,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_sorcerous-burst",
+  "name": "Sorcerous Burst",
+  "level": 0,
+  "classIds": [
+   "srd-2024_sorcerer"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_spare-the-dying",
+  "name": "Spare the Dying",
+  "level": 0,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_starry-wisp",
+  "name": "Starry Wisp",
+  "level": 0,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_thaumaturgy",
+  "name": "Thaumaturgy",
+  "level": 0,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_true-strike",
+  "name": "True Strike",
+  "level": 0,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_vicious-mockery",
+  "name": "Vicious Mockery",
+  "level": 0,
+  "classIds": [
+   "srd-2024_bard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_alarm",
+  "name": "Alarm",
+  "level": 1,
+  "classIds": [
+   "srd-2024_ranger",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_animal-friendship",
+  "name": "Animal Friendship",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_bane",
+  "name": "Bane",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_warlock"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_bless",
+  "name": "Bless",
+  "level": 1,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_paladin"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_burning-hands",
+  "name": "Burning Hands",
+  "level": 1,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_charm-person",
+  "name": "Charm Person",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_chromatic-orb",
+  "name": "Chromatic Orb",
+  "level": 1,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_color-spray",
+  "name": "Color Spray",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_command",
+  "name": "Command",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_paladin"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_comprehend-languages",
+  "name": "Comprehend Languages",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_create-or-destroy-water",
+  "name": "Create or Destroy Water",
+  "level": 1,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_cure-wounds",
+  "name": "Cure Wounds",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_paladin",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_detect-evil-and-good",
+  "name": "Detect Evil and Good",
+  "level": 1,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_paladin"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_detect-magic",
+  "name": "Detect Magic",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_paladin",
+   "srd-2024_ranger",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_detect-poison-and-disease",
+  "name": "Detect Poison and Disease",
+  "level": 1,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_paladin",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_disguise-self",
+  "name": "Disguise Self",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_dissonant-whispers",
+  "name": "Dissonant Whispers",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_divine-favor",
+  "name": "Divine Favor",
+  "level": 1,
+  "classIds": [
+   "srd-2024_paladin"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_divine-smite",
+  "name": "Divine Smite",
+  "level": 1,
+  "classIds": [
+   "srd-2024_paladin"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_ensnaring-strike",
+  "name": "Ensnaring Strike",
+  "level": 1,
+  "classIds": [
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_entangle",
+  "name": "Entangle",
+  "level": 1,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_expeditious-retreat",
+  "name": "Expeditious Retreat",
+  "level": 1,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_faerie-fire",
+  "name": "Faerie Fire",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_false-life",
+  "name": "False Life",
+  "level": 1,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_feather-fall",
+  "name": "Feather Fall",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_find-familiar",
+  "name": "Find Familiar",
+  "level": 1,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_floating-disk",
+  "name": "Floating Disk",
+  "level": 1,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_fog-cloud",
+  "name": "Fog Cloud",
+  "level": 1,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_ranger",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_goodberry",
+  "name": "Goodberry",
+  "level": 1,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_grease",
+  "name": "Grease",
+  "level": 1,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_guiding-bolt",
+  "name": "Guiding Bolt",
+  "level": 1,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_healing-word",
+  "name": "Healing Word",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_hellish-rebuke",
+  "name": "Hellish Rebuke",
+  "level": 1,
+  "classIds": [
+   "srd-2024_warlock"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_heroism",
+  "name": "Heroism",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_paladin"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_hex",
+  "name": "Hex",
+  "level": 1,
+  "classIds": [
+   "srd-2024_warlock"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_hideous-laughter",
+  "name": "Hideous Laughter",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_hunters-mark",
+  "name": "Hunter's Mark",
+  "level": 1,
+  "classIds": [
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_ice-knife",
+  "name": "Ice Knife",
+  "level": 1,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_identify",
+  "name": "Identify",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_illusory-script",
+  "name": "Illusory Script",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_inflict-wounds",
+  "name": "Inflict Wounds",
+  "level": 1,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_jump",
+  "name": "Jump",
+  "level": 1,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_ranger",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_longstrider",
+  "name": "Longstrider",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid",
+   "srd-2024_ranger",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_mage-armor",
+  "name": "Mage Armor",
+  "level": 1,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_magic-missile",
+  "name": "Magic Missile",
+  "level": 1,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_protection-from-evil-and-good",
+  "name": "Protection from Evil and Good",
+  "level": 1,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_paladin",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_purify-food-and-drink",
+  "name": "Purify Food and Drink",
+  "level": 1,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_paladin"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_ray-of-sickness",
+  "name": "Ray of Sickness",
+  "level": 1,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_sanctuary",
+  "name": "Sanctuary",
+  "level": 1,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_searing-smite",
+  "name": "Searing Smite",
+  "level": 1,
+  "classIds": [
+   "srd-2024_paladin"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_shield",
+  "name": "Shield",
+  "level": 1,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_shield-of-faith",
+  "name": "Shield of Faith",
+  "level": 1,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_paladin"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_silent-image",
+  "name": "Silent Image",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_sleep",
+  "name": "Sleep",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_speak-with-animals",
+  "name": "Speak with Animals",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid",
+   "srd-2024_ranger",
+   "srd-2024_warlock"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_thunderwave",
+  "name": "Thunderwave",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_unseen-servant",
+  "name": "Unseen Servant",
+  "level": 1,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_acid-arrow",
+  "name": "Acid Arrow",
+  "level": 2,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_aid",
+  "name": "Aid",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_paladin",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_alter-self",
+  "name": "Alter Self",
+  "level": 2,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_animal-messenger",
+  "name": "Animal Messenger",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_arcane-lock",
+  "name": "Arcane Lock",
+  "level": 2,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_arcanists-magic-aura",
+  "name": "Arcanist's Magic Aura",
+  "level": 2,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_augury",
+  "name": "Augury",
+  "level": 2,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_barkskin",
+  "name": "Barkskin",
+  "level": 2,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_blindnessdeafness",
+  "name": "Blindness/Deafness",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_blur",
+  "name": "Blur",
+  "level": 2,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_calm-emotions",
+  "name": "Calm Emotions",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_continual-flame",
+  "name": "Continual Flame",
+  "level": 2,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_darkness",
+  "name": "Darkness",
+  "level": 2,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_darkvision",
+  "name": "Darkvision",
+  "level": 2,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_ranger",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_detect-thoughts",
+  "name": "Detect Thoughts",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_dragons-breath",
+  "name": "Dragon's Breath",
+  "level": 2,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_enhance-ability",
+  "name": "Enhance Ability",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_ranger",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_enlargereduce",
+  "name": "Enlarge/Reduce",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_enthrall",
+  "name": "Enthrall",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_warlock"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_find-steed",
+  "name": "Find Steed",
+  "level": 2,
+  "classIds": [
+   "srd-2024_paladin"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_find-traps",
+  "name": "Find Traps",
+  "level": 2,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_flame-blade",
+  "name": "Flame Blade",
+  "level": 2,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_sorcerer"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_flaming-sphere",
+  "name": "Flaming Sphere",
+  "level": 2,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_gentle-repose",
+  "name": "Gentle Repose",
+  "level": 2,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_paladin",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_gust-of-wind",
+  "name": "Gust of Wind",
+  "level": 2,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_ranger",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_heat-metal",
+  "name": "Heat Metal",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_hold-person",
+  "name": "Hold Person",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_invisibility",
+  "name": "Invisibility",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_knock",
+  "name": "Knock",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_lesser-restoration",
+  "name": "Lesser Restoration",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_paladin",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_levitate",
+  "name": "Levitate",
+  "level": 2,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_locate-animals-or-plants",
+  "name": "Locate Animals or Plants",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_locate-object",
+  "name": "Locate Object",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_paladin",
+   "srd-2024_ranger",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_magic-mouth",
+  "name": "Magic Mouth",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_magic-weapon",
+  "name": "Magic Weapon",
+  "level": 2,
+  "classIds": [
+   "srd-2024_paladin",
+   "srd-2024_ranger",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_mind-spike",
+  "name": "Mind Spike",
+  "level": 2,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_mirror-image",
+  "name": "Mirror Image",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_misty-step",
+  "name": "Misty Step",
+  "level": 2,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_moonbeam",
+  "name": "Moonbeam",
+  "level": 2,
+  "classIds": [
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_pass-without-trace",
+  "name": "Pass without Trace",
+  "level": 2,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_phantasmal-force",
+  "name": "Phantasmal Force",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_prayer-of-healing",
+  "name": "Prayer of Healing",
+  "level": 2,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_paladin"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_protection-from-poison",
+  "name": "Protection from Poison",
+  "level": 2,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_paladin",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_ray-of-enfeeblement",
+  "name": "Ray of Enfeeblement",
+  "level": 2,
+  "classIds": [
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_rope-trick",
+  "name": "Rope Trick",
+  "level": 2,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_scorching-ray",
+  "name": "Scorching Ray",
+  "level": 2,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_see-invisibility",
+  "name": "See Invisibility",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_shatter",
+  "name": "Shatter",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_shining-smite",
+  "name": "Shining Smite",
+  "level": 2,
+  "classIds": [
+   "srd-2024_paladin"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_silence",
+  "name": "Silence",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_spider-climb",
+  "name": "Spider Climb",
+  "level": 2,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_spike-growth",
+  "name": "Spike Growth",
+  "level": 2,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_spiritual-weapon",
+  "name": "Spiritual Weapon",
+  "level": 2,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_suggestion",
+  "name": "Suggestion",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_warding-bond",
+  "name": "Warding Bond",
+  "level": 2,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_paladin"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_web",
+  "name": "Web",
+  "level": 2,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_zone-of-truth",
+  "name": "Zone of Truth",
+  "level": 2,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_paladin"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_animate-dead",
+  "name": "Animate Dead",
+  "level": 3,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_beacon-of-hope",
+  "name": "Beacon of Hope",
+  "level": 3,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_bestow-curse",
+  "name": "Bestow Curse",
+  "level": 3,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_blink",
+  "name": "Blink",
+  "level": 3,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_call-lightning",
+  "name": "Call Lightning",
+  "level": 3,
+  "classIds": [
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_clairvoyance",
+  "name": "Clairvoyance",
+  "level": 3,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_conjure-animals",
+  "name": "Conjure Animals",
+  "level": 3,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_counterspell",
+  "name": "Counterspell",
+  "level": 3,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_create-food-and-water",
+  "name": "Create Food and Water",
+  "level": 3,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_paladin"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_daylight",
+  "name": "Daylight",
+  "level": 3,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_paladin",
+   "srd-2024_ranger",
+   "srd-2024_sorcerer"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_dispel-magic",
+  "name": "Dispel Magic",
+  "level": 3,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_paladin",
+   "srd-2024_ranger",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_fear",
+  "name": "Fear",
+  "level": 3,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_fireball",
+  "name": "Fireball",
+  "level": 3,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_fly",
+  "name": "Fly",
+  "level": 3,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_gaseous-form",
+  "name": "Gaseous Form",
+  "level": 3,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_glyph-of-warding",
+  "name": "Glyph of Warding",
+  "level": 3,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_haste",
+  "name": "Haste",
+  "level": 3,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_hypnotic-pattern",
+  "name": "Hypnotic Pattern",
+  "level": 3,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_lightning-bolt",
+  "name": "Lightning Bolt",
+  "level": 3,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_magic-circle",
+  "name": "Magic Circle",
+  "level": 3,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_paladin",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_major-image",
+  "name": "Major Image",
+  "level": 3,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_mass-healing-word",
+  "name": "Mass Healing Word",
+  "level": 3,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_meld-into-stone",
+  "name": "Meld into Stone",
+  "level": 3,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_nondetection",
+  "name": "Nondetection",
+  "level": 3,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_ranger",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_phantom-steed",
+  "name": "Phantom Steed",
+  "level": 3,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_plant-growth",
+  "name": "Plant Growth",
+  "level": 3,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_protection-from-energy",
+  "name": "Protection from Energy",
+  "level": 3,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_ranger",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_remove-curse",
+  "name": "Remove Curse",
+  "level": 3,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_paladin",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_revivify",
+  "name": "Revivify",
+  "level": 3,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_paladin",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_sending",
+  "name": "Sending",
+  "level": 3,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_sleet-storm",
+  "name": "Sleet Storm",
+  "level": 3,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_slow",
+  "name": "Slow",
+  "level": 3,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_speak-with-dead",
+  "name": "Speak with Dead",
+  "level": 3,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_speak-with-plants",
+  "name": "Speak with Plants",
+  "level": 3,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_spirit-guardians",
+  "name": "Spirit Guardians",
+  "level": 3,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_stinking-cloud",
+  "name": "Stinking Cloud",
+  "level": 3,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tiny-hut",
+  "name": "Tiny Hut",
+  "level": 3,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tongues",
+  "name": "Tongues",
+  "level": 3,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_vampiric-touch",
+  "name": "Vampiric Touch",
+  "level": 3,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_water-breathing",
+  "name": "Water Breathing",
+  "level": 3,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_ranger",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_water-walk",
+  "name": "Water Walk",
+  "level": 3,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_ranger",
+   "srd-2024_sorcerer"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_wind-wall",
+  "name": "Wind Wall",
+  "level": 3,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_arcane-eye",
+  "name": "Arcane Eye",
+  "level": 4,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_aura-of-life",
+  "name": "Aura of Life",
+  "level": 4,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_paladin"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_banishment",
+  "name": "Banishment",
+  "level": 4,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_paladin",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_black-tentacles",
+  "name": "Black Tentacles",
+  "level": 4,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_blight",
+  "name": "Blight",
+  "level": 4,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_charm-monster",
+  "name": "Charm Monster",
+  "level": 4,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_compulsion",
+  "name": "Compulsion",
+  "level": 4,
+  "classIds": [
+   "srd-2024_bard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_confusion",
+  "name": "Confusion",
+  "level": 4,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_conjure-minor-elementals",
+  "name": "Conjure Minor Elementals",
+  "level": 4,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_conjure-woodland-beings",
+  "name": "Conjure Woodland Beings",
+  "level": 4,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_control-water",
+  "name": "Control Water",
+  "level": 4,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_death-ward",
+  "name": "Death Ward",
+  "level": 4,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_paladin"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_dimension-door",
+  "name": "Dimension Door",
+  "level": 4,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_divination",
+  "name": "Divination",
+  "level": 4,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_dominate-beast",
+  "name": "Dominate Beast",
+  "level": 4,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_ranger",
+   "srd-2024_sorcerer"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_fabricate",
+  "name": "Fabricate",
+  "level": 4,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_faithful-hound",
+  "name": "Faithful Hound",
+  "level": 4,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_fire-shield",
+  "name": "Fire Shield",
+  "level": 4,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_freedom-of-movement",
+  "name": "Freedom of Movement",
+  "level": 4,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_giant-insect",
+  "name": "Giant Insect",
+  "level": 4,
+  "classIds": [
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_greater-invisibility",
+  "name": "Greater Invisibility",
+  "level": 4,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_guardian-of-faith",
+  "name": "Guardian of Faith",
+  "level": 4,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_hallucinatory-terrain",
+  "name": "Hallucinatory Terrain",
+  "level": 4,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_ice-storm",
+  "name": "Ice Storm",
+  "level": 4,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_locate-creature",
+  "name": "Locate Creature",
+  "level": 4,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_paladin",
+   "srd-2024_ranger",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_phantasmal-killer",
+  "name": "Phantasmal Killer",
+  "level": 4,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_polymorph",
+  "name": "Polymorph",
+  "level": 4,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_private-sanctum",
+  "name": "Private Sanctum",
+  "level": 4,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_resilient-sphere",
+  "name": "Resilient Sphere",
+  "level": 4,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_secret-chest",
+  "name": "Secret Chest",
+  "level": 4,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_stone-shape",
+  "name": "Stone Shape",
+  "level": 4,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_stoneskin",
+  "name": "Stoneskin",
+  "level": 4,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_ranger",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_vitriolic-sphere",
+  "name": "Vitriolic Sphere",
+  "level": 4,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_wall-of-fire",
+  "name": "Wall of Fire",
+  "level": 4,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_animate-objects",
+  "name": "Animate Objects",
+  "level": 5,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_antilife-shell",
+  "name": "Antilife Shell",
+  "level": 5,
+  "classIds": [
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_arcane-hand",
+  "name": "Arcane Hand",
+  "level": 5,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_awaken",
+  "name": "Awaken",
+  "level": 5,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_cloudkill",
+  "name": "Cloudkill",
+  "level": 5,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_commune",
+  "name": "Commune",
+  "level": 5,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_commune-with-nature",
+  "name": "Commune with Nature",
+  "level": 5,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_cone-of-cold",
+  "name": "Cone of Cold",
+  "level": 5,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_conjure-elemental",
+  "name": "Conjure Elemental",
+  "level": 5,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_contact-other-plane",
+  "name": "Contact Other Plane",
+  "level": 5,
+  "classIds": [
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_contagion",
+  "name": "Contagion",
+  "level": 5,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_creation",
+  "name": "Creation",
+  "level": 5,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_dispel-evil-and-good",
+  "name": "Dispel Evil and Good",
+  "level": 5,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_paladin"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_dominate-person",
+  "name": "Dominate Person",
+  "level": 5,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_dream",
+  "name": "Dream",
+  "level": 5,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_flame-strike",
+  "name": "Flame Strike",
+  "level": 5,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_geas",
+  "name": "Geas",
+  "level": 5,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_paladin",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_greater-restoration",
+  "name": "Greater Restoration",
+  "level": 5,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_paladin",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_hallow",
+  "name": "Hallow",
+  "level": 5,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_hold-monster",
+  "name": "Hold Monster",
+  "level": 5,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_insect-plague",
+  "name": "Insect Plague",
+  "level": 5,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_sorcerer"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_legend-lore",
+  "name": "Legend Lore",
+  "level": 5,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_mass-cure-wounds",
+  "name": "Mass Cure Wounds",
+  "level": 5,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_mislead",
+  "name": "Mislead",
+  "level": 5,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_modify-memory",
+  "name": "Modify Memory",
+  "level": 5,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_passwall",
+  "name": "Passwall",
+  "level": 5,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_planar-binding",
+  "name": "Planar Binding",
+  "level": 5,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_raise-dead",
+  "name": "Raise Dead",
+  "level": 5,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_paladin"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_reincarnate",
+  "name": "Reincarnate",
+  "level": 5,
+  "classIds": [
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_scrying",
+  "name": "Scrying",
+  "level": 5,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_seeming",
+  "name": "Seeming",
+  "level": 5,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_summon-dragon",
+  "name": "Summon Dragon",
+  "level": 5,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_telekinesis",
+  "name": "Telekinesis",
+  "level": 5,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_telepathic-bond",
+  "name": "Telepathic Bond",
+  "level": 5,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_teleportation-circle",
+  "name": "Teleportation Circle",
+  "level": 5,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tree-stride",
+  "name": "Tree Stride",
+  "level": 5,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_ranger"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_wall-of-force",
+  "name": "Wall of Force",
+  "level": 5,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_wall-of-stone",
+  "name": "Wall of Stone",
+  "level": 5,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_blade-barrier",
+  "name": "Blade Barrier",
+  "level": 6,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_chain-lightning",
+  "name": "Chain Lightning",
+  "level": 6,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_circle-of-death",
+  "name": "Circle of Death",
+  "level": 6,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_conjure-fey",
+  "name": "Conjure Fey",
+  "level": 6,
+  "classIds": [
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_contingency",
+  "name": "Contingency",
+  "level": 6,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_create-undead",
+  "name": "Create Undead",
+  "level": 6,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_disintegrate",
+  "name": "Disintegrate",
+  "level": 6,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_eyebite",
+  "name": "Eyebite",
+  "level": 6,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_find-the-path",
+  "name": "Find the Path",
+  "level": 6,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_flesh-to-stone",
+  "name": "Flesh to Stone",
+  "level": 6,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_forbiddance",
+  "name": "Forbiddance",
+  "level": 6,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_freezing-sphere",
+  "name": "Freezing Sphere",
+  "level": 6,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_globe-of-invulnerability",
+  "name": "Globe of Invulnerability",
+  "level": 6,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_guards-and-wards",
+  "name": "Guards and Wards",
+  "level": 6,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_harm",
+  "name": "Harm",
+  "level": 6,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_heal",
+  "name": "Heal",
+  "level": 6,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_heroes-feast",
+  "name": "Heroes' Feast",
+  "level": 6,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_instant-summons",
+  "name": "Instant Summons",
+  "level": 6,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_irresistible-dance",
+  "name": "Irresistible Dance",
+  "level": 6,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_magic-jar",
+  "name": "Magic Jar",
+  "level": 6,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_mass-suggestion",
+  "name": "Mass Suggestion",
+  "level": 6,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_move-earth",
+  "name": "Move Earth",
+  "level": 6,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_planar-ally",
+  "name": "Planar Ally",
+  "level": 6,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_programmed-illusion",
+  "name": "Programmed Illusion",
+  "level": 6,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_sunbeam",
+  "name": "Sunbeam",
+  "level": 6,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_transport-via-plants",
+  "name": "Transport via Plants",
+  "level": 6,
+  "classIds": [
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_true-seeing",
+  "name": "True Seeing",
+  "level": 6,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_wall-of-ice",
+  "name": "Wall of Ice",
+  "level": 6,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_wall-of-thorns",
+  "name": "Wall of Thorns",
+  "level": 6,
+  "classIds": [
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_wind-walk",
+  "name": "Wind Walk",
+  "level": 6,
+  "classIds": [
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_word-of-recall",
+  "name": "Word of Recall",
+  "level": 6,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_arcane-sword",
+  "name": "Arcane Sword",
+  "level": 7,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_conjure-celestial",
+  "name": "Conjure Celestial",
+  "level": 7,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_delayed-blast-fireball",
+  "name": "Delayed Blast Fireball",
+  "level": 7,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_divine-word",
+  "name": "Divine Word",
+  "level": 7,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_etherealness",
+  "name": "Etherealness",
+  "level": 7,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_finger-of-death",
+  "name": "Finger of Death",
+  "level": 7,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_fire-storm",
+  "name": "Fire Storm",
+  "level": 7,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_sorcerer"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_forcecage",
+  "name": "Forcecage",
+  "level": 7,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_magnificent-mansion",
+  "name": "Magnificent Mansion",
+  "level": 7,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_mirage-arcane",
+  "name": "Mirage Arcane",
+  "level": 7,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_plane-shift",
+  "name": "Plane Shift",
+  "level": 7,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_prismatic-spray",
+  "name": "Prismatic Spray",
+  "level": 7,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_project-image",
+  "name": "Project Image",
+  "level": 7,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_regenerate",
+  "name": "Regenerate",
+  "level": 7,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_resurrection",
+  "name": "Resurrection",
+  "level": 7,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_reverse-gravity",
+  "name": "Reverse Gravity",
+  "level": 7,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_sequester",
+  "name": "Sequester",
+  "level": 7,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_simulacrum",
+  "name": "Simulacrum",
+  "level": 7,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_symbol",
+  "name": "Symbol",
+  "level": 7,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_teleport",
+  "name": "Teleport",
+  "level": 7,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_animal-shapes",
+  "name": "Animal Shapes",
+  "level": 8,
+  "classIds": [
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_antimagic-field",
+  "name": "Antimagic Field",
+  "level": 8,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_antipathysympathy",
+  "name": "Antipathy/Sympathy",
+  "level": 8,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_befuddlement",
+  "name": "Befuddlement",
+  "level": 8,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_clone",
+  "name": "Clone",
+  "level": 8,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_control-weather",
+  "name": "Control Weather",
+  "level": 8,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_demiplane",
+  "name": "Demiplane",
+  "level": 8,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_dominate-monster",
+  "name": "Dominate Monster",
+  "level": 8,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_earthquake",
+  "name": "Earthquake",
+  "level": 8,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_sorcerer"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_glibness",
+  "name": "Glibness",
+  "level": 8,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_warlock"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_holy-aura",
+  "name": "Holy Aura",
+  "level": 8,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_incendiary-cloud",
+  "name": "Incendiary Cloud",
+  "level": 8,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_maze",
+  "name": "Maze",
+  "level": 8,
+  "classIds": [
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_mind-blank",
+  "name": "Mind Blank",
+  "level": 8,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_power-word-stun",
+  "name": "Power Word Stun",
+  "level": 8,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_sunburst",
+  "name": "Sunburst",
+  "level": 8,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid",
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tsunami",
+  "name": "Tsunami",
+  "level": 8,
+  "classIds": [
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_astral-projection",
+  "name": "Astral Projection",
+  "level": 9,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_foresight",
+  "name": "Foresight",
+  "level": 9,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_druid",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_gate",
+  "name": "Gate",
+  "level": 9,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_imprisonment",
+  "name": "Imprisonment",
+  "level": 9,
+  "classIds": [
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_mass-heal",
+  "name": "Mass Heal",
+  "level": 9,
+  "classIds": [
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_meteor-swarm",
+  "name": "Meteor Swarm",
+  "level": 9,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_power-word-heal",
+  "name": "Power Word Heal",
+  "level": 9,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_cleric"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_power-word-kill",
+  "name": "Power Word Kill",
+  "level": 9,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_sorcerer",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_prismatic-wall",
+  "name": "Prismatic Wall",
+  "level": 9,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_shapechange",
+  "name": "Shapechange",
+  "level": 9,
+  "classIds": [
+   "srd-2024_druid",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_storm-of-vengeance",
+  "name": "Storm of Vengeance",
+  "level": 9,
+  "classIds": [
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_time-stop",
+  "name": "Time Stop",
+  "level": 9,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_true-polymorph",
+  "name": "True Polymorph",
+  "level": 9,
+  "classIds": [
+   "srd-2024_bard",
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_true-resurrection",
+  "name": "True Resurrection",
+  "level": 9,
+  "classIds": [
+   "srd-2024_cleric",
+   "srd-2024_druid"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_weird",
+  "name": "Weird",
+  "level": 9,
+  "classIds": [
+   "srd-2024_warlock",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_wish",
+  "name": "Wish",
+  "level": 9,
+  "classIds": [
+   "srd-2024_sorcerer",
+   "srd-2024_wizard"
+  ],
+  "isCustom": false
+ }
+]
