@@ -85,6 +85,10 @@ struct CharacterEditorView: View {
     @State private var spellSearch = ""
     @State private var expandedLevels: Set<Int> = []
 
+    // États d'UI des sélecteurs d'équipement (clé = "weapons"/"armor"/"tools"/"gear").
+    @State private var equipSearch: [String: String] = [:]
+    @State private var equipExpanded: [String: Set<String>] = [:]
+
     init(character: Character, library: ContentLibrary, onChange: @escaping (Character) -> Void) {
         self.library = library
         self.onChange = onChange
@@ -135,6 +139,10 @@ struct CharacterEditorView: View {
                 healthCombatSection
                 spellsSelectionSection
                 toolsSelectionSection
+                weaponsOwnedSection
+                armorOwnedSection
+                toolsOwnedSection
+                gearOwnedSection
                 textSection
             }
             .formStyle(.grouped)
@@ -356,7 +364,7 @@ struct CharacterEditorView: View {
     }
 
     private var toolsSelectionSection: some View {
-        Section("Outils") {
+        Section("Outils — maîtrises") {
             // Texte libre seulement si l'outil d'historique ne correspond à aucun
             // outil de la liste (sinon il est coché ci-dessous, pas besoin de doublon).
             if !currentBackground.toolProficiency.isEmpty, backgroundToolMatch == nil {
@@ -393,6 +401,132 @@ struct CharacterEditorView: View {
                 }
             }
         }
+    }
+
+    // MARK: Équipement possédé (façon sélecteur de sorts)
+
+    private var weaponsOwnedSection: some View {
+        equipmentSection("Armes", key: "weapons",
+                         items: library.weapons, ids: \.ownedWeaponIds)
+    }
+
+    private var armorOwnedSection: some View {
+        equipmentSection("Armures", key: "armor",
+                         items: library.armor, ids: \.ownedArmorIds)
+    }
+
+    private var toolsOwnedSection: some View {
+        // Réutilise le même catalogue que les maîtrises (library.tools), mais
+        // alimente un champ distinct (ownedToolIds) : possession ≠ compétence.
+        equipmentSection("Outils — possédés", key: "tools",
+                         items: toolsAsEquipment, ids: \.ownedToolIds)
+    }
+
+    private var gearOwnedSection: some View {
+        equipmentSection("Équipement général", key: "gear",
+                         items: library.gear, ids: \.ownedGearIds)
+    }
+
+    /// Catalogue d'outils converti au schéma EquipmentItem (groupe unique « Tools »).
+    private var toolsAsEquipment: [EquipmentItem] {
+        library.tools.map { EquipmentItem(id: $0.id, name: $0.name, group: "Tools") }
+    }
+
+    /// Section générique de sélection d'équipement : recherche + DisclosureGroup
+    /// par `group` + Toggle par item, sur le même modèle que les sorts.
+    @ViewBuilder
+    private func equipmentSection(
+        _ title: String, key: String,
+        items: [EquipmentItem], ids: WritableKeyPath<Character, [String]>
+    ) -> some View {
+        Section(title) {
+            let search = equipSearch[key] ?? ""
+            TextField("Rechercher", text: equipSearchBinding(key))
+                .textFieldStyle(.roundedBorder)
+            let groups = equipmentGroups(items, search: search)
+            ForEach(groups, id: \.self) { group in
+                DisclosureGroup(
+                    isExpanded: equipExpandedBinding(key, group, searchActive: !search.isEmpty)
+                ) {
+                    ForEach(equipmentItems(items, group: group, search: search)) { item in
+                        Toggle(isOn: equipBinding(ids, item.id)) {
+                            VStack(alignment: .leading, spacing: 1) {
+                                HStack {
+                                    Text(item.name)
+                                    if !item.weight.isEmpty {
+                                        Text(item.weight).font(.caption2).foregroundStyle(.tertiary)
+                                    }
+                                }
+                                if !item.detail.isEmpty {
+                                    Text(item.detail).font(.caption2).foregroundStyle(.secondary)
+                                }
+                            }
+                        }
+                    }
+                } label: {
+                    HStack {
+                        Text(group)
+                        Spacer()
+                        Text("\(selectedEquipCount(items, group: group, ids: ids)) choisi(s)")
+                            .font(.caption).foregroundStyle(.secondary)
+                    }
+                }
+            }
+            if groups.isEmpty {
+                Text("Aucun élément ne correspond.").font(.caption).foregroundStyle(.secondary)
+            }
+        }
+    }
+
+    private func equipMatches(_ item: EquipmentItem, _ q: String) -> Bool {
+        q.isEmpty || item.name.lowercased().contains(q) || item.detail.lowercased().contains(q)
+    }
+
+    private func equipmentGroups(_ items: [EquipmentItem], search: String) -> [String] {
+        let q = search.trimmingCharacters(in: .whitespaces).lowercased()
+        let filtered = items.filter { equipMatches($0, q) }
+        return Array(Set(filtered.map(\.group))).sorted()
+    }
+
+    private func equipmentItems(_ items: [EquipmentItem], group: String, search: String) -> [EquipmentItem] {
+        let q = search.trimmingCharacters(in: .whitespaces).lowercased()
+        return items
+            .filter { $0.group == group && equipMatches($0, q) }
+            .sorted { $0.name < $1.name }
+    }
+
+    /// Items possédés dans ce groupe (indépendant de la recherche).
+    private func selectedEquipCount(_ items: [EquipmentItem], group: String,
+                                    ids: WritableKeyPath<Character, [String]>) -> Int {
+        let owned = Set(character[keyPath: ids])
+        return items.filter { $0.group == group && owned.contains($0.id) }.count
+    }
+
+    private func equipBinding(_ ids: WritableKeyPath<Character, [String]>, _ id: String) -> Binding<Bool> {
+        Binding(
+            get: { character[keyPath: ids].contains(id) },
+            set: { on in
+                if on {
+                    if !character[keyPath: ids].contains(id) { character[keyPath: ids].append(id) }
+                } else {
+                    character[keyPath: ids].removeAll { $0 == id }
+                }
+            })
+    }
+
+    private func equipSearchBinding(_ key: String) -> Binding<String> {
+        Binding(get: { equipSearch[key] ?? "" }, set: { equipSearch[key] = $0 })
+    }
+
+    /// Replié par défaut ; déplié d'office quand une recherche est active.
+    private func equipExpandedBinding(_ key: String, _ group: String, searchActive: Bool) -> Binding<Bool> {
+        Binding(
+            get: { searchActive || (equipExpanded[key]?.contains(group) ?? false) },
+            set: { open in
+                var set = equipExpanded[key] ?? []
+                if open { set.insert(group) } else { set.remove(group) }
+                equipExpanded[key] = set
+            })
     }
 
     private var textSection: some View {
