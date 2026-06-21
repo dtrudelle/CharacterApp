@@ -312,7 +312,7 @@ struct CharacterSheetView: View {
             }
             if !sheet.knownTools.isEmpty || !references.background.toolProficiency.isEmpty {
                 VStack(alignment: .leading, spacing: 6) {
-                    sectionLabel("Outils")
+                    sectionLabel("Outils — maîtrises")
                     // Texte libre seulement si l'outil d'historique ne correspond
                     // à aucun outil de la liste (sinon il figure déjà dans knownTools).
                     if !references.background.toolProficiency.isEmpty, !backgroundToolIsListed {
@@ -326,7 +326,27 @@ struct CharacterSheetView: View {
                     }
                 }
             }
-            textBlock("Équipement", character.equipmentText)
+            VStack(alignment: .leading, spacing: 6) {
+                sectionLabel("Équipement")
+                // Sélection des catalogues (résolue), groupée par catégorie.
+                ForEach(sheet.ownedEquipment) { group in
+                    VStack(alignment: .leading, spacing: 1) {
+                        Text(group.category).font(.caption.weight(.medium)).foregroundStyle(.secondary)
+                        Text(group.names.joined(separator: ", "))
+                            .font(.caption)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+                // Texte libre : objets hors catalogue (toujours conservé).
+                if !character.equipmentText.isEmpty {
+                    Text(character.equipmentText)
+                        .font(.callout)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                } else if sheet.ownedEquipment.isEmpty {
+                    Text("—").font(.callout).foregroundStyle(.secondary)
+                }
+            }
 
             VStack(alignment: .leading, spacing: 6) {
                 sectionLabel("Monnaie")
