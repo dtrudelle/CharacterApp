@@ -131,6 +131,7 @@ struct CharacterEditorView: View {
                 abilitiesSection
                 increasesSection
                 skillsSection
+                featsSection
                 healthCombatSection
                 spellsSelectionSection
                 toolsSelectionSection
@@ -230,22 +231,23 @@ struct CharacterEditorView: View {
     }
 
     private var increasesSection: some View {
-        Section("Bonus de caractéristique") {
-            LabeledContent("Background") { EmptyView() }
+        Section("Background") {
             backgroundASIRow
-            ForEach(asiLevelsUpTo, id: \.self) { lvl in
-                Divider()
-                levelASIRow(lvl)
-            }
-            Divider()
-            bonusFeatsBlock
         }
     }
 
     private var skillsSection: some View {
         Section("Skill") {
-            Text("Background: \(currentBackground.skillProficiencies.map(\.label).joined(separator: ", "))")
-                .font(.caption).foregroundStyle(.secondary)
+            // Skills accordés par l'historique : cochés d'office, comme l'outil et
+            // le don d'origine. Déjà comptés dans proficientSkills (et exclus des
+            // choix de classe via eligibleSkills) ; ici, affichage uniquement.
+            ForEach(currentBackground.skillProficiencies, id: \.self) { sk in
+                HStack {
+                    Text(sk.label)
+                    Text("(Background)").font(.caption2).foregroundStyle(.secondary)
+                    Spacer()
+                }
+            }
             ForEach(0..<currentClass.skillChoiceCount, id: \.self) { i in
                 Picker("Skill \(i + 1)", selection: skillSlotBinding(i)) {
                     Text("—").tag(Optional<Skill>.none)
@@ -281,6 +283,39 @@ struct CharacterEditorView: View {
                     }
                 }
             }
+        }
+    }
+
+    private var featsSection: some View {
+        Section("Feat") {
+            // Don d'origine de l'historique : accordé automatiquement, comme l'outil
+            // d'historique dans la section Outils. Non modifiable (déterminé par
+            // l'historique choisi ; déjà injecté sur la fiche via originFeatId).
+            if let origin = backgroundOriginFeat {
+                VStack(alignment: .leading, spacing: 2) {
+                    HStack {
+                        Text(origin.name)
+                        Text("(Background)").font(.caption2).foregroundStyle(.secondary)
+                        Spacer()
+                    }
+                    if !origin.shortEffect.isEmpty {
+                        Text(origin.shortEffect).font(.caption2).foregroundStyle(.tertiary)
+                    }
+                }
+            } else if currentBackground.originFeatId != nil {
+                Text("Don d'origine de l'historique introuvable dans la bibliothèque.")
+                    .font(.caption).foregroundStyle(.secondary)
+            }
+            // Améliorations de niveau (déplacées depuis la section Background, telles
+            // quelles) : à chaque palier, caractéristique OU feat.
+            ForEach(asiLevelsUpTo, id: \.self) { lvl in
+                Divider()
+                levelASIRow(lvl)
+            }
+            if backgroundOriginFeat != nil || currentBackground.originFeatId != nil || !asiLevelsUpTo.isEmpty {
+                Divider()
+            }
+            bonusFeatsBlock
         }
     }
 
@@ -532,6 +567,13 @@ struct CharacterEditorView: View {
         library.backgrounds.first { $0.id == character.backgroundId }
             ?? library.backgrounds.first
             ?? Background.empty
+    }
+
+    /// Don d'origine de l'historique courant, résolu dans la bibliothèque.
+    /// nil si l'historique n'en accorde pas ou si l'id ne correspond à aucun don.
+    private var backgroundOriginFeat: Feat? {
+        guard let id = currentBackground.originFeatId else { return nil }
+        return library.feats.first { $0.id == id }
     }
 
     private func subclasses(of classId: String) -> [Subclass] {

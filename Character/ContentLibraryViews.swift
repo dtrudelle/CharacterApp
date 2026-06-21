@@ -275,6 +275,16 @@ struct BackgroundLibrarySheet: View {
     }
 }
 
+/// Mode de saisie de la maîtrise d'outil d'un historique :
+/// « Liste » = choix dans la liste des outils (recommandé : garantit le lien
+/// automatique avec l'éditeur de personnage, qui coche l'outil par nom exact) ;
+/// « Texte libre » = valeurs hors liste (ex. « un jeu de société au choix »).
+private enum ToolEntryMode: String, CaseIterable, Identifiable {
+    case tool = "Liste"
+    case free = "Texte libre"
+    var id: String { rawValue }
+}
+
 struct BackgroundEditorSheet: View {
     @Environment(ContentLibrary.self) private var library
     @Environment(\.dismiss) private var dismiss
@@ -283,6 +293,7 @@ struct BackgroundEditorSheet: View {
     @State private var abilityOptions: [Ability]
     @State private var skills: [Skill]
     @State private var originFeatId: String   // "" = aucun
+    @State private var toolMode: ToolEntryMode = .tool
 
     init(background: Background) {
         _draft = State(initialValue: background)
@@ -309,13 +320,50 @@ struct BackgroundEditorSheet: View {
                     }
                 }
                 Section("Divers") {
-                    TextField("Maîtrise d'outil", text: $draft.toolProficiency)
+                    Picker("Maîtrise d'outil", selection: $toolMode) {
+                        ForEach(ToolEntryMode.allCases) { Text($0.rawValue).tag($0) }
+                    }
+                    .pickerStyle(.segmented)
+                    if toolMode == .tool {
+                        // Le menu écrit le nom exact de l'outil → l'éditeur de
+                        // personnage coche l'outil automatiquement (cf. toolMatch).
+                        Picker("Outil", selection: toolNameBinding) {
+                            Text("Aucun").tag("")
+                            ForEach(library.tools) { t in Text(t.name).tag(t.name) }
+                        }
+                    } else {
+                        TextField("Maîtrise d'outil (texte libre)", text: $draft.toolProficiency)
+                    }
                     TextField("Équipement (texte)", text: $draft.equipmentText, axis: .vertical)
                         .lineLimit(1...4)
                 }
             }
             .formStyle(.grouped)
+            .onAppear {
+                // Texte libre seulement si la valeur existante ne correspond à
+                // aucun outil connu (ex. historique custom déjà saisi à la main).
+                let raw = draft.toolProficiency
+                    .trimmingCharacters(in: .whitespacesAndNewlines)
+                    .lowercased()
+                let known = library.tools.contains { $0.name.lowercased() == raw }
+                toolMode = (raw.isEmpty || known) ? .tool : .free
+            }
         }
+    }
+
+    /// Lit/écrit `draft.toolProficiency` en mode liste : le getter renvoie le nom
+    /// canonique de l'outil si la valeur courante correspond (insensible à la casse)
+    /// à un outil connu, sinon "" (→ « Aucun »). Le setter stocke le nom exact.
+    private var toolNameBinding: Binding<String> {
+        Binding(
+            get: {
+                let raw = draft.toolProficiency
+                    .trimmingCharacters(in: .whitespacesAndNewlines)
+                    .lowercased()
+                return library.tools.first { $0.name.lowercased() == raw }?.name ?? ""
+            },
+            set: { draft.toolProficiency = $0 }
+        )
     }
 
     private func save() {
