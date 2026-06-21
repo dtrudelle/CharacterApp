@@ -183,19 +183,19 @@ struct CharacterSheetView: View {
                     Text(character.hitPointsText.isEmpty ? "—" : character.hitPointsText)
                         .font(.title2.weight(.medium)).monospacedDigit()
                 }
-                Divider().frame(height: 36)
+                Divider().frame(height: 36).overlay(Color.primary.opacity(0.35))
                 labelled("Wounds · 10 + CON") {
                     Text("\(sheet.wounds)").font(.title2.weight(.medium)).monospacedDigit()
                 }
-                Divider().frame(height: 36)
+                Divider().frame(height: 36).overlay(Color.primary.opacity(0.35))
                 labelled("Dés de vie · \(sheet.hitDiceLabel)") {
                     dieBoxes(total: sheet.hitDiceTotal)
                 }
             }
-            Divider()
+            Divider().overlay(Color.primary.opacity(0.35))
             HStack(spacing: 18) {
                 HStack(spacing: 6) { Text("Blessé").font(.caption).foregroundStyle(.secondary); checkBox(filled: false) }
-                Divider().frame(height: 18)
+                Divider().frame(height: 18).overlay(Color.primary.opacity(0.35))
                 Text("Jets contre la mort").font(.caption).foregroundStyle(.secondary)
                 HStack(spacing: 5) { Text("Réussites").font(.caption2).foregroundStyle(.secondary); boxes(3, filled: 0) }
                 HStack(spacing: 5) { Text("Échecs").font(.caption2).foregroundStyle(.secondary); boxes(3, filled: 0) }
@@ -203,7 +203,7 @@ struct CharacterSheetView: View {
         }
         .padding(12)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(RoundedRectangle(cornerRadius: 8).strokeBorder(.quaternary))
+        .background(RoundedRectangle(cornerRadius: 8).strokeBorder(Color.primary.opacity(0.35)))
     }
 
     // MARK: Combat & sorts
@@ -226,7 +226,7 @@ struct CharacterSheetView: View {
                 }
             }
             .padding(10)
-            .background(RoundedRectangle(cornerRadius: 8).strokeBorder(.quaternary))
+            .background(RoundedRectangle(cornerRadius: 8).strokeBorder(Color.primary.opacity(0.35)))
         }
     }
 
@@ -348,7 +348,7 @@ struct CharacterSheetView: View {
             .padding(22)
             .frame(minWidth: pageWidth, maxWidth: pageWidth, minHeight: pageHeight, alignment: .topLeading)
             .background(RoundedRectangle(cornerRadius: 12).fill(Color(nsColor: .textBackgroundColor)))
-            .overlay(RoundedRectangle(cornerRadius: 12).strokeBorder(.quaternary))
+            .overlay(RoundedRectangle(cornerRadius: 12).strokeBorder(Color.primary.opacity(0.35)))
             .overlay(alignment: .topTrailing) {
                 Text(label).font(.caption2).foregroundStyle(.tertiary).padding(12)
             }
@@ -356,8 +356,8 @@ struct CharacterSheetView: View {
 
     private func sectionLabel(_ t: String) -> some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(t).font(.caption.weight(.medium)).foregroundStyle(.secondary)
-            Divider()
+            Text(t).font(.caption.weight(.bold)).foregroundStyle(.primary)
+            Divider().overlay(Color.primary.opacity(0.35))
         }
     }
 
@@ -368,7 +368,7 @@ struct CharacterSheetView: View {
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 6)
-        .background(RoundedRectangle(cornerRadius: 6).fill(Color(nsColor: .controlBackgroundColor)))
+        .background(RoundedRectangle(cornerRadius: 6).strokeBorder(Color.primary.opacity(0.35)))
     }
 
     private func slotCell(_ value: String, strong: Bool) -> some View {
@@ -376,7 +376,7 @@ struct CharacterSheetView: View {
             .font(strong ? .callout.weight(.medium) : .caption)
             .monospacedDigit()
             .frame(width: 24, height: 22)
-            .background(RoundedRectangle(cornerRadius: 5).fill(Color(nsColor: .controlBackgroundColor)))
+            .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color.primary.opacity(0.35)))
     }
 
     private func featureRow(name: String, tag: String?, description: String) -> some View {
