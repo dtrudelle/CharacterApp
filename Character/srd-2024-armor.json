@@ -1,0 +1,106 @@
+[
+ {
+  "id": "srd-2024_chain-mail",
+  "name": "Chain Mail",
+  "group": "Heavy",
+  "detail": "AC 16 • Str 13 • Stealth disadvantage",
+  "weight": "55 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_plate-armor",
+  "name": "Plate Armor",
+  "group": "Heavy",
+  "detail": "AC 18 • Str 15 • Stealth disadvantage",
+  "weight": "65 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_ring-mail",
+  "name": "Ring Mail",
+  "group": "Heavy",
+  "detail": "AC 14 • Stealth disadvantage",
+  "weight": "40 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_splint-armor",
+  "name": "Splint Armor",
+  "group": "Heavy",
+  "detail": "AC 17 • Str 15 • Stealth disadvantage",
+  "weight": "60 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_leather-armor",
+  "name": "Leather Armor",
+  "group": "Light",
+  "detail": "AC 11 + Dex modifier",
+  "weight": "10 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_padded-armor",
+  "name": "Padded Armor",
+  "group": "Light",
+  "detail": "AC 11 + Dex modifier • Stealth disadvantage",
+  "weight": "8 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_studded-leather-armor",
+  "name": "Studded Leather Armor",
+  "group": "Light",
+  "detail": "AC 12 + Dex modifier",
+  "weight": "13 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_breastplate",
+  "name": "Breastplate",
+  "group": "Medium",
+  "detail": "AC 14 + Dex modifier (max 2)",
+  "weight": "20 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_chain-shirt",
+  "name": "Chain Shirt",
+  "group": "Medium",
+  "detail": "AC 13 + Dex modifier (max 2)",
+  "weight": "20 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_half-plate-armor",
+  "name": "Half Plate Armor",
+  "group": "Medium",
+  "detail": "AC 15 + Dex modifier (max 2) • Stealth disadvantage",
+  "weight": "40 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_hide-armor",
+  "name": "Hide Armor",
+  "group": "Medium",
+  "detail": "AC 12 + Dex modifier (max 2)",
+  "weight": "12 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_scale-mail",
+  "name": "Scale Mail",
+  "group": "Medium",
+  "detail": "AC 14 + Dex modifier (max 2) • Stealth disadvantage",
+  "weight": "45 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_shield",
+  "name": "Shield",
+  "group": "Shield",
+  "detail": "+2 AC",
+  "weight": "6 lb",
+  "isCustom": false
+ }
+]

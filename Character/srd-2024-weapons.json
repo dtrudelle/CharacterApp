@@ -1,0 +1,306 @@
+[
+ {
+  "id": "srd-2024_battleaxe",
+  "name": "Battleaxe",
+  "group": "Martial Melee",
+  "detail": "1d8 Slashing • Mastery: Topple • Versatile (1d10)",
+  "weight": "4 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_flail",
+  "name": "Flail",
+  "group": "Martial Melee",
+  "detail": "1d8 Bludgeoning • Mastery: Sap",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_glaive",
+  "name": "Glaive",
+  "group": "Martial Melee",
+  "detail": "1d10 Slashing • Mastery: Graze • Heavy, Reach, Two-Handed",
+  "weight": "6 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_greataxe",
+  "name": "Greataxe",
+  "group": "Martial Melee",
+  "detail": "1d12 Slashing • Mastery: Cleave • Heavy, Two-Handed",
+  "weight": "7 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_greatsword",
+  "name": "Greatsword",
+  "group": "Martial Melee",
+  "detail": "2d6 Slashing • Mastery: Graze • Heavy, Two-Handed",
+  "weight": "6 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_halberd",
+  "name": "Halberd",
+  "group": "Martial Melee",
+  "detail": "1d10 Slashing • Mastery: Cleave • Heavy, Reach, Two-Handed",
+  "weight": "6 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_lance",
+  "name": "Lance",
+  "group": "Martial Melee",
+  "detail": "1d10 Piercing • Mastery: Topple • Heavy, Reach, Two-Handed (unless mounted)",
+  "weight": "6 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_longsword",
+  "name": "Longsword",
+  "group": "Martial Melee",
+  "detail": "1d8 Slashing • Mastery: Sap • Versatile (1d10)",
+  "weight": "3 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_maul",
+  "name": "Maul",
+  "group": "Martial Melee",
+  "detail": "2d6 Bludgeoning • Mastery: Topple • Heavy, Two-Handed",
+  "weight": "10 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_morningstar",
+  "name": "Morningstar",
+  "group": "Martial Melee",
+  "detail": "1d8 Piercing • Mastery: Sap",
+  "weight": "4 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_pike",
+  "name": "Pike",
+  "group": "Martial Melee",
+  "detail": "1d10 Piercing • Mastery: Push • Heavy, Reach, Two-Handed",
+  "weight": "18 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_rapier",
+  "name": "Rapier",
+  "group": "Martial Melee",
+  "detail": "1d8 Piercing • Mastery: Vex • Finesse",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_scimitar",
+  "name": "Scimitar",
+  "group": "Martial Melee",
+  "detail": "1d6 Slashing • Mastery: Nick • Finesse, Light",
+  "weight": "3 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_shortsword",
+  "name": "Shortsword",
+  "group": "Martial Melee",
+  "detail": "1d6 Piercing • Mastery: Vex • Finesse, Light",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_trident",
+  "name": "Trident",
+  "group": "Martial Melee",
+  "detail": "1d8 Piercing • Mastery: Topple • Thrown (Range 20/60), Versatile (1d10)",
+  "weight": "4 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_war-pick",
+  "name": "War Pick",
+  "group": "Martial Melee",
+  "detail": "1d8 Piercing • Mastery: Sap • Versatile (1d10)",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_warhammer",
+  "name": "Warhammer",
+  "group": "Martial Melee",
+  "detail": "1d8 Bludgeoning • Mastery: Push • Versatile (1d10)",
+  "weight": "5 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_whip",
+  "name": "Whip",
+  "group": "Martial Melee",
+  "detail": "1d4 Slashing • Mastery: Slow • Finesse, Reach",
+  "weight": "3 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_blowgun",
+  "name": "Blowgun",
+  "group": "Martial Ranged",
+  "detail": "1 Piercing • Mastery: Vex • Ammunition (Range 25/100; Needle), Loading",
+  "weight": "1 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_hand-crossbow",
+  "name": "Hand Crossbow",
+  "group": "Martial Ranged",
+  "detail": "1d6 Piercing • Mastery: Vex • Ammunition (Range 30/120; Bolt), Light, Loading",
+  "weight": "3 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_heavy-crossbow",
+  "name": "Heavy Crossbow",
+  "group": "Martial Ranged",
+  "detail": "1d10 Piercing • Mastery: Push • Ammunition (Range 100/400; Bolt), Heavy, Loading, Two-Handed",
+  "weight": "18 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_longbow",
+  "name": "Longbow",
+  "group": "Martial Ranged",
+  "detail": "1d8 Piercing • Mastery: Slow • Ammunition (Range 150/600; Arrow), Heavy, Two-Handed",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_musket",
+  "name": "Musket",
+  "group": "Martial Ranged",
+  "detail": "1d12 Piercing • Mastery: Slow • Ammunition (Range 40/120; Bullet), Loading, Two-Handed",
+  "weight": "10 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_pistol",
+  "name": "Pistol",
+  "group": "Martial Ranged",
+  "detail": "1d10 Piercing • Mastery: Vex • Ammunition (Range 30/90; Bullet), Loading",
+  "weight": "3 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_club",
+  "name": "Club",
+  "group": "Simple Melee",
+  "detail": "1d4 Bludgeoning • Mastery: Slow • Light",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_dagger",
+  "name": "Dagger",
+  "group": "Simple Melee",
+  "detail": "1d4 Piercing • Mastery: Nick • Finesse, Light, Thrown (Range 20/60)",
+  "weight": "1 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_greatclub",
+  "name": "Greatclub",
+  "group": "Simple Melee",
+  "detail": "1d8 Bludgeoning • Mastery: Push • Two-Handed",
+  "weight": "10 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_handaxe",
+  "name": "Handaxe",
+  "group": "Simple Melee",
+  "detail": "1d6 Slashing • Mastery: Vex • Light, Thrown (Range 20/60)",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_javelin",
+  "name": "Javelin",
+  "group": "Simple Melee",
+  "detail": "1d6 Piercing • Mastery: Slow • Thrown (Range 30/120)",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_light-hammer",
+  "name": "Light Hammer",
+  "group": "Simple Melee",
+  "detail": "1d4 Bludgeoning • Mastery: Nick • Light, Thrown (Range 20/60)",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_mace",
+  "name": "Mace",
+  "group": "Simple Melee",
+  "detail": "1d6 Bludgeoning • Mastery: Sap",
+  "weight": "4 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_quarterstaff",
+  "name": "Quarterstaff",
+  "group": "Simple Melee",
+  "detail": "1d6 Bludgeoning • Mastery: Topple • Versatile (1d8)",
+  "weight": "4 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_sickle",
+  "name": "Sickle",
+  "group": "Simple Melee",
+  "detail": "1d4 Slashing • Mastery: Nick • Light",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_spear",
+  "name": "Spear",
+  "group": "Simple Melee",
+  "detail": "1d6 Piercing • Mastery: Sap • Thrown (Range 20/60), Versatile (1d8)",
+  "weight": "3 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_dart",
+  "name": "Dart",
+  "group": "Simple Ranged",
+  "detail": "1d4 Piercing • Mastery: Vex • Finesse, Thrown (Range 20/60)",
+  "weight": "1 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_light-crossbow",
+  "name": "Light Crossbow",
+  "group": "Simple Ranged",
+  "detail": "1d8 Piercing • Mastery: Slow • Ammunition (Range 80/320; Bolt), Loading, Two-Handed",
+  "weight": "5 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_shortbow",
+  "name": "Shortbow",
+  "group": "Simple Ranged",
+  "detail": "1d6 Piercing • Mastery: Vex • Ammunition (Range 80/320; Arrow), Two-Handed",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_sling",
+  "name": "Sling",
+  "group": "Simple Ranged",
+  "detail": "1d4 Bludgeoning • Mastery: Slow • Ammunition (Range 30/120; Bullet)",
+  "weight": "",
+  "isCustom": false
+ }
+]
