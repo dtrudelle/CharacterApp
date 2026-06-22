@@ -55,7 +55,7 @@ struct ComputedSheet {
     var hitDiceTotal: Int        // = niveau
     var hitDieType: String       // ex. « d8 »
     var hitDiceRemaining: Int
-    var wounds: Int              // 10 + score de CON
+    var wounds: Int              // score de CON + woundBonus de l'espèce
 
     // Descriptif
     var featureGroups: [FeatureGroup]
@@ -158,7 +158,7 @@ struct SheetBuilder {
             hitDiceTotal: ch.level,
             hitDieType: cls.hitDie,
             hitDiceRemaining: max(0, ch.level - ch.hitDiceUsed),
-            wounds: 10 + abilities.score(.CON),
+            wounds: abilities.score(.CON) + refs.species.woundBonus,
             featureGroups: featureGroups(ch, refs),
             feats: feats(ch, refs),
             knownSpells: knownSpells(ch, refs),

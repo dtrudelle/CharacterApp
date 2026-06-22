@@ -152,8 +152,35 @@ struct Species: Codable, Identifiable {
     var id: String
     var name: String
     var traits: [Trait]
+    /// Valeur statique de blessures liée à la robustesse de l'espèce.
+    /// wounds = score de CON + woundBonus. 10 = humanoïde standard,
+    /// 12 = espèce robuste (nain, goliath…), 8 = espèce frêle (elfe, halfelin…).
+    var woundBonus: Int = 10
     var isCustom: Bool = false
     // Rappel : en 2024, l'espèce ne donne aucun bonus de caractéristique.
+
+    // Init membre explicite : conservé car plusieurs sites construisent
+    // Species(...) directement (seed, aperçus, éditeur de bibliothèque).
+    init(id: String, name: String, traits: [Trait],
+         woundBonus: Int = 10, isCustom: Bool = false) {
+        self.id = id
+        self.name = name
+        self.traits = traits
+        self.woundBonus = woundBonus
+        self.isCustom = isCustom
+    }
+
+    // Décodage rétro-compatible : woundBonus & isCustom peuvent manquer dans
+    // les données déjà persistées. Sans decodeIfPresent, l'échec d'un seul
+    // objet (try? sur le tableau complet) effacerait tout le contenu.
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        id = try c.decode(String.self, forKey: .id)
+        name = try c.decode(String.self, forKey: .name)
+        traits = try c.decode([Trait].self, forKey: .traits)
+        woundBonus = try c.decodeIfPresent(Int.self, forKey: .woundBonus) ?? 10
+        isCustom = try c.decodeIfPresent(Bool.self, forKey: .isCustom) ?? false
+    }
 }
 
 // MARK: - Historique
