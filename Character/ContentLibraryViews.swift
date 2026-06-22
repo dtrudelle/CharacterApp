@@ -602,8 +602,12 @@ struct FeatEditorSheet: View {
     @Environment(\.dismiss) private var dismiss
 
     @State private var draft: Feat
+    @State private var grantsBonus: Bool
 
-    init(feat: Feat) { _draft = State(initialValue: feat) }
+    init(feat: Feat) {
+        _draft = State(initialValue: feat)
+        _grantsBonus = State(initialValue: !feat.abilityBonusOptions.isEmpty)
+    }
 
     var body: some View {
         EditorScaffold(title: draft.name, onCancel: { dismiss() }, onSave: save) {
@@ -623,13 +627,40 @@ struct FeatEditorSheet: View {
                     TextField("Effet (résumé)", text: $draft.shortEffect, axis: .vertical)
                         .lineLimit(2...6)
                 }
+                Section("Bonus de caractéristique") {
+                    Toggle("Accorde un +1 à une caractéristique", isOn: $grantsBonus)
+                    if grantsBonus {
+                        ForEach(Ability.allCases, id: \.self) { a in
+                            Toggle(a.rawValue, isOn: abilityOptionBinding(a))
+                        }
+                        Text("Une carac cochée = imposée · plusieurs = au choix · les six = choix libre.")
+                            .font(.caption2).foregroundStyle(.tertiary)
+                    }
+                }
             }
             .formStyle(.grouped)
         }
+        .onChange(of: grantsBonus) { _, on in
+            if on && draft.abilityBonusOptions.isEmpty { draft.abilityBonusOptions = Ability.allCases }
+            if !on { draft.abilityBonusOptions = [] }
+        }
+    }
+
+    /// Coche/décoche une carac éligible, en conservant l'ordre canonique.
+    private func abilityOptionBinding(_ a: Ability) -> Binding<Bool> {
+        Binding(
+            get: { draft.abilityBonusOptions.contains(a) },
+            set: { on in
+                var s = Set(draft.abilityBonusOptions)
+                if on { s.insert(a) } else { s.remove(a) }
+                draft.abilityBonusOptions = Ability.allCases.filter { s.contains($0) }
+            }
+        )
     }
 
     private func save() {
         if draft.id.isEmpty { draft.id = makeID(from: draft.name, prefix: "don") }
+        if !grantsBonus { draft.abilityBonusOptions = [] }
         library.upsert(draft)
         dismiss()
     }

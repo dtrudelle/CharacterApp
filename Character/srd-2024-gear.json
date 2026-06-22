@@ -1,0 +1,626 @@
+[
+ {
+  "id": "srd-2024_acid",
+  "name": "Acid",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "1 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_alchemists-fire",
+  "name": "Alchemist's Fire",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "1 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_ball-bearings",
+  "name": "Ball Bearings",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_barrel",
+  "name": "Barrel",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "70 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_basket",
+  "name": "Basket",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_bedroll",
+  "name": "Bedroll",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "7 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_bell",
+  "name": "Bell",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_blanket",
+  "name": "Blanket",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "3 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_block-and-tackle",
+  "name": "Block and Tackle",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "5 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_book",
+  "name": "Book",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "5 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_bottle-glass",
+  "name": "Bottle, Glass",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_bucket",
+  "name": "Bucket",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_caltrops",
+  "name": "Caltrops",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_candle",
+  "name": "Candle",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_case-crossbow-bolt",
+  "name": "Case, Crossbow Bolt",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "1 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_chain",
+  "name": "Chain",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "10 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_chest",
+  "name": "Chest",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "25 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_clothes-fine",
+  "name": "Clothes, Fine",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "6 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_clothes-travelers",
+  "name": "Clothes, Traveler's",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "4 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_component-pouch",
+  "name": "Component Pouch",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_costume",
+  "name": "Costume",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "4 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_crowbar",
+  "name": "Crowbar",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "5 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_feed-per-day",
+  "name": "Feed (per day)",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "10 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_flask",
+  "name": "Flask",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "1 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_grappling-hook",
+  "name": "Grappling Hook",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "4 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_holy-symbol-amulet",
+  "name": "Holy Symbol, Amulet)",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "1 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_holy-symbol-emblem",
+  "name": "Holy Symbol, Emblem)",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_holy-symbol-reliquary",
+  "name": "Holy Symbol, Reliquary",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_holy-water",
+  "name": "Holy Water",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "1 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_hunting-trap",
+  "name": "Hunting Trap",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "25 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_ink",
+  "name": "Ink",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_ink-pen",
+  "name": "Ink Pen",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_jug",
+  "name": "Jug",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "4 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_ladder",
+  "name": "Ladder",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "25 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_lamp",
+  "name": "Lamp",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "1 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_lantern-bullseye",
+  "name": "Lantern, Bullseye",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_lantern-hooded",
+  "name": "Lantern, Hooded",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_lock",
+  "name": "Lock",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "1 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_magnifying-glass",
+  "name": "Magnifying Glass",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_manacles",
+  "name": "Manacles",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "6 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_map",
+  "name": "Map",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_mirror",
+  "name": "Mirror",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "0.5 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_net",
+  "name": "Net",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "3 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_oil",
+  "name": "Oil",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "1 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_paper",
+  "name": "Paper",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_parchment",
+  "name": "Parchment",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_perfume",
+  "name": "Perfume",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_poison-basic",
+  "name": "Poison, Basic",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_pole",
+  "name": "Pole",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "7 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_pot-iron",
+  "name": "Pot, Iron",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "10 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_pouch",
+  "name": "Pouch",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "1 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_quiver",
+  "name": "Quiver",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "1 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_ram-portable",
+  "name": "Ram, Portable",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "35 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_rations",
+  "name": "Rations",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "2 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_robe",
+  "name": "Robe",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "4 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_rope",
+  "name": "Rope",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "5 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_sack",
+  "name": "Sack",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "0.5 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_saddle-exotic",
+  "name": "Saddle (Exotic)",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "40 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_saddle-military",
+  "name": "Saddle (Military)",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "30 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_saddle-riding",
+  "name": "Saddle (Riding)",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "25 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_shovel",
+  "name": "Shovel",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "5 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_signal-whistle",
+  "name": "Signal Whistle",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_spikes-iron",
+  "name": "Spikes, Iron",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "5 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_spyglass",
+  "name": "Spyglass",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "1 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_string",
+  "name": "String",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tent",
+  "name": "Tent",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "20 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_tinderbox",
+  "name": "Tinderbox",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "1 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_torch",
+  "name": "Torch",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "1 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_vial",
+  "name": "Vial",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_waterskin",
+  "name": "Waterskin",
+  "group": "Adventuring Gear",
+  "detail": "",
+  "weight": "5 lb",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_camel",
+  "name": "Camel",
+  "group": "Mount",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_elephant",
+  "name": "Elephant",
+  "group": "Mount",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_horse-draft",
+  "name": "Horse (Draft)",
+  "group": "Mount",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_horse-riding",
+  "name": "Horse (Riding)",
+  "group": "Mount",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_mastiff",
+  "name": "Mastiff",
+  "group": "Mount",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_mule",
+  "name": "Mule",
+  "group": "Mount",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_pony",
+  "name": "Pony",
+  "group": "Mount",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ },
+ {
+  "id": "srd-2024_warhorse",
+  "name": "Warhorse",
+  "group": "Mount",
+  "detail": "",
+  "weight": "",
+  "isCustom": false
+ }
+]
