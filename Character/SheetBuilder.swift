@@ -23,6 +23,10 @@ struct ComputedSheet {
     }
 
     struct FeatureGroup {
+        /// Provenance du groupe : sert à répartir les colonnes de la fiche
+        /// (classe + sous-classe d'un côté, espèce de l'autre) sans parser `source`.
+        enum Origin { case species, characterClass, subclass }
+        var origin: Origin
         var source: String    // ex. « Classe — Clerc »
         var features: [Trait]
     }
@@ -306,18 +310,24 @@ struct SheetBuilder {
         var groups: [ComputedSheet.FeatureGroup] = []
 
         if !refs.species.traits.isEmpty {
-            groups.append(.init(source: "Espèce — \(refs.species.name)", features: refs.species.traits))
+            groups.append(.init(origin: .species,
+                                source: "Espèce — \(refs.species.name)",
+                                features: refs.species.traits))
         }
 
         let classFeatures = refs.characterClass.features.filter { ($0.level ?? 1) <= ch.level }
         if !classFeatures.isEmpty {
-            groups.append(.init(source: "Classe — \(refs.characterClass.name)", features: classFeatures))
+            groups.append(.init(origin: .characterClass,
+                                source: "Classe — \(refs.characterClass.name)",
+                                features: classFeatures))
         }
 
         if let sub = refs.subclass {
             let subFeatures = sub.features.filter { ($0.level ?? 1) <= ch.level }
             if !subFeatures.isEmpty {
-                groups.append(.init(source: "Sous-classe — \(sub.name)", features: subFeatures))
+                groups.append(.init(origin: .subclass,
+                                    source: "Sous-classe — \(sub.name)",
+                                    features: subFeatures))
             }
         }
         return groups
