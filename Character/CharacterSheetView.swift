@@ -181,7 +181,7 @@ struct CharacterSheetView: View {
             HStack(alignment: .top, spacing: 20) {
                 labelled("Points de vie") {
                     HStack(spacing: 10) {
-                        Text("\(sheet.hitPointsMax)").font(.title2.weight(.medium)).monospacedDigit()
+                        Text("\(sheet.hitPointsMax)").font(.title2.weight(.medium)).monospacedDigit().fixedSize()
                         // Case blanche : PV courants, à écrire à la main en cours de jeu.
                         VStack(spacing: 1) {
                             RoundedRectangle(cornerRadius: 4)
@@ -199,9 +199,21 @@ struct CharacterSheetView: View {
                 labelled("Dés de vie · \(sheet.hitDiceLabel)") {
                     dieBoxes(total: sheet.hitDiceTotal)
                 }
+                if let focus = sheet.focusPoints {
+                    Spacer(minLength: 16)
+                    labelled("Points de focus") {
+                        dieBoxes(total: focus)
+                    }
+                }
             }
             Divider().overlay(Color.primary.opacity(0.35))
             HStack(spacing: 18) {
+                labelled("Inspiration") {
+                    RoundedRectangle(cornerRadius: 4)
+                        .strokeBorder(Color.primary.opacity(0.35))
+                        .frame(width: 60, height: 24)
+                }
+                Divider().frame(height: 30).overlay(Color.primary.opacity(0.35))
                 HStack(spacing: 6) { Text("Blessé").font(.caption).foregroundStyle(.secondary); checkBox(filled: false) }
                 Divider().frame(height: 18).overlay(Color.primary.opacity(0.35))
                 Text("Jets contre la mort").font(.caption).foregroundStyle(.secondary)

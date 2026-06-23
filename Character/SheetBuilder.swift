@@ -56,6 +56,10 @@ struct ComputedSheet {
     var hitDieType: String       // ex. « d8 »
     var hitDiceRemaining: Int
     var wounds: Int              // score de CON + woundBonus de l'espèce
+    /// Points de focus (règle maison) : nombre de cases = modificateur de la stat
+    /// de casting. nil si la classe n'est pas wizard/sorcerer/warlock ou si le
+    /// modificateur est ≤ 0 (dans ce cas le bloc n'est pas affiché).
+    var focusPoints: Int?
 
     // Descriptif
     var featureGroups: [FeatureGroup]
@@ -138,6 +142,17 @@ struct SheetBuilder {
         let cantrips = cls.cantripsKnownByLevel.indices.contains(lvlIdx) ? cls.cantripsKnownByLevel[lvlIdx] : nil
         let prepared = cls.preparedSpellsByLevel.indices.contains(lvlIdx) ? cls.preparedSpellsByLevel[lvlIdx] : nil
 
+        // Points de focus (règle maison) : uniquement wizard, sorcerer, warlock ;
+        // nombre = modificateur de la stat de casting (nil si ≤ 0).
+        var focus: Int? = nil
+        let isFocusClass = ["wizard", "sorcerer", "warlock"].contains {
+            cls.name.lowercased() == $0 || cls.id.lowercased().hasSuffix("_\($0)")
+        }
+        if isFocusClass, let sa = cls.spellcastingAbility {
+            let mod = abilities.modifier(sa)
+            if mod > 0 { focus = mod }
+        }
+
         return ComputedSheet(
             finalAbilities: abilities,
             proficiencyBonus: pb,
@@ -159,6 +174,7 @@ struct SheetBuilder {
             hitDieType: cls.hitDie,
             hitDiceRemaining: max(0, ch.level - ch.hitDiceUsed),
             wounds: abilities.score(.CON) + refs.species.woundBonus,
+            focusPoints: focus,
             featureGroups: featureGroups(ch, refs),
             feats: feats(ch, refs),
             knownSpells: knownSpells(ch, refs),
