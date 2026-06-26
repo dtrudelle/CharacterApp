@@ -183,7 +183,7 @@ struct CharacterSheetView: View {
 
     private var healthBand: some View {
         VStack(alignment: .leading, spacing: 10) {
-            HStack(alignment: .top, spacing: 20) {
+            HStack(alignment: .top, spacing: 14) {
                 labelled("Points de vie") {
                     HStack(spacing: 10) {
                         Text("\(sheet.hitPointsMax)").font(.title2.weight(.medium)).monospacedDigit().fixedSize()
@@ -198,14 +198,22 @@ struct CharacterSheetView: View {
                 }
                 Divider().frame(height: 36).overlay(Color.primary.opacity(0.35))
                 labelled("Wounds") {
-                    Text("\(sheet.wounds)").font(.title2.weight(.medium)).monospacedDigit()
+                    HStack(spacing: 10) {
+                        Text("\(sheet.wounds)").font(.title2.weight(.medium)).monospacedDigit().fixedSize()
+                        // Case blanche : wounds courants, à écrire à la main en cours de jeu.
+                        VStack(spacing: 1) {
+                            RoundedRectangle(cornerRadius: 4)
+                                .strokeBorder(Color.primary.opacity(0.35))
+                                .frame(width: 50, height: 24)
+                            Text("courants").font(.system(size: 8)).foregroundStyle(.tertiary)
+                        }
+                    }
                 }
                 Divider().frame(height: 36).overlay(Color.primary.opacity(0.35))
                 labelled("Dés de vie · \(sheet.hitDiceLabel)") {
                     dieBoxes(total: sheet.hitDiceTotal)
                 }
                 if let focus = sheet.focusPoints {
-                    Spacer(minLength: 16)
                     labelled("Points de focus") {
                         // Rangées de 4 : le modificateur de casting dépasse rarement
                         // 4, et resterait sinon sur une seule ligne trop large.
